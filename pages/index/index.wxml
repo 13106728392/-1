@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+{{returnDate}}
+   <view class="swiper-container">
+        <swiper class="swiper_box" 
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+            <block wx:for="{{banners}}" wx:key="id">
+                <swiper-item>
+                    <image bindtap="tapBanner" data-id="{{item.businessId}}" src="{{item.picUrl}}_m" class="slide-image" width="750rpx" height="562.5rpx"/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="dots">  
+            <block wx:for="{{banners}}" wx:key="unique">  
+                <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>  
+            </block>  
+        </view>  
+   </view>
+<button type="primary" bindtap="takePhoto">综合案例</button>
+<button type='primary' bindtap='cancel'>打开弹框</button>
+<button type='primary' bindtap='danmu'>手持弹幕</button>
+<button type='primary' bindtap='dishu'>打地鼠</button>
+<button type='primary' bindtap='huaban'>画板</button>
+<button type='primary' bindtap='huakuai'>滑块</button>
+<button type='primary' bindtap='tab'>滑动tab</button>
+<button type='primary' bindtap='donghua'>动画</button>
+<button type='primary' bindtap='tuwen'>图文编辑组件</button>
+
+
+<modal hidden="{{hidden}}" title="这里是title" confirm-text="自定义确定按钮" cancel-text="自定义取消按钮" bindcancel="cancel" bindconfirm="confirm" no-cancel="{{nocancel}}">
+    这是对话框的内容。
+</modal>
+
+
+<image mode="widthFix" src="{{src}}"></image>
+
+<view animation="{{animation}}" class="view"  bindtap="touch">点我做动画</view>
+
+<!-- <web-view src="https://mp.weixin.qq.com/"></web-view> -->
+</view>

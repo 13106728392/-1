@@ -1,0 +1,43 @@
+<!--pages/dishu/dishu.wxml-->
+<!-- <text class='title'>点击开始</text>  -->
+<text>当前分数：{{showNum}}</text>
+
+<view class='bigbox'>
+  <view wx:for="{{picList}}"  class="slide-image">
+    <image bindtap="tapBanner" data-id="{{item.url2}}" src="{{item.url2}}" class='img' />
+  </view>
+</view>
+
+<button bindtap="start">开始</button>
+
+<button bindtap="stop">停止</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

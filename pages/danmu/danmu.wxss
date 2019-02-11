@@ -1,0 +1,7 @@
+/* pages/danmu/danmu.wxss */
+
+.input{
+  border: 1px solid black;
+  height: 40rpx;
+  line-height: 40rpx;
+}

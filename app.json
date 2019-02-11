@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/newtest/test",
+    "pages/weekBox/weekBoxs",
+    "pages/logs/logs",
+    "pages/goods-details/index",
+    "pages/danmu/danmu",
+    "pages/dishu/dishu",
+    "pages/huaban/huaban",
+    "pages/wxDrawer/index",
+    "pages/scrollableTabView/index",
+    "pages/donghua/donghua",
+    "pages/wenben/wenben"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  }
+}

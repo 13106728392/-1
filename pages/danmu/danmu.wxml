@@ -1,0 +1,11 @@
+<!--pages/danmu/danmu.wxml-->
+
+<view>
+  <text>输入要弹幕的字段</text>
+  <input class='input' bindinput="bindKeyInput"></input>
+  <button type='primary' bindtap='danmu'>确定</button>
+    <rich-text nodes="{{nodes}}"></rich-text>
+  <text  wx:if="{{hasMoreSelect}}">{{inputValue}}</text>
+
+
+</view>
